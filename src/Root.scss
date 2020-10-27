@@ -1,0 +1,39 @@
+.app {
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  button {
+    padding: 0.6rem 1rem;
+    justify-self: center;
+    border-radius: 100px;
+    border: 8px solid #fafafa;
+    background-color: #999;
+    color: #fff;
+    font-size: 1rem;
+    &:focus {
+      box-sizing: border-box !important;
+      border: 8px double #fafafa;
+      border-radius: 200px;
+      outline: none;
+    }
+  }
+}
+.gameBoard {
+  display: grid;
+  width: 65vmin;
+  height: 65vmin;
+  box-sizing: initial;
+  justify-self: center;
+}
+
+.buttonBoard {
+  display: flex;
+  min-width: 65vmin;
+  justify-self: center;
+  justify-content: space-between;
+  margin: 2rem;
+}
